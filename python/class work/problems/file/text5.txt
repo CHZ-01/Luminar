@@ -1,0 +1,12 @@
+1. This LICENSE AGREEMENT is between the Python Software Foundation ("PSF"), and
+   the Individual or Organization ("license") accessing and otherwise using Python
+   distribute, and otherwise use Python 3.12.5 alone or in any derivative
+   copyright, i.e., "Copyright © 2001-2023 Python Software Foundation; All Rights
+   Reserved" are retained in Python 3.12.5 alone or in any derivative version
+   incorporates Python 3.12.5 or any part thereof, and wants to make the
+   agrees to include in any such work a brief summary of the changes made to Python
+4. PSF is making Python 3.12.5 available to license on an "AS IS" basis.
+   USE OF PYTHON 3.12.5 WILL NOT INFRINGE ANY THIRD PARTY RIGHTS.
+5. PSF SHALL NOT BE LIABLE TO license OR ANY OTHER USERS OF PYTHON 3.12.5
+   MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON 3.12.5, OR ANY DERIVATIVE
+8. By copying, installing or otherwise using Python 3.12.5, license agrees
