@@ -1,0 +1,37 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  max-height: 100vh;
+}
+
+.stMainBlockContainer {
+  width: 67%;
+  padding: 0rem 1rem 0rem;
+}
+
+.stImage {
+  height: 125px;
+}
+
+[data-testid="stVerticalBlockBorderWrapper"] {
+  padding-top: 10px;
+}
+
+[data-testid="stHeadingWithActionElements"] h1 {
+  padding: 0rem 0px 0.5rem;
+}
+
+[data-testid="stHeadingWithActionElements"] h3 {
+  padding: 0rem 0px 0.5rem;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+[data-testid="stAlertContentError"] {
+  padding-bottom: 10px;
+}
