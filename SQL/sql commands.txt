@@ -1,0 +1,151 @@
+Syntax:
+
+## login to mysql cmd
+mysql -u root -p
+
+## login to mysql cmd with other port number
+mysql -u root -p -P 3307
+
+## show all the databases
+show databases;
+
+## create a database
+create database database_name;
+
+## to select a database
+use database_name;
+
+## to create a table
+## row downwards
+## column sidewards
+create table table_name(column_name datatype(size), column_name datatype(size), ....,etc);
+
+## to show available tables
+show tables;
+
+## to insert data into the table
+insert into table_name values (value1, value2, ....,etc), (value1, value2, ....,etc), .....,etc;
+
+## to fetch data from table
+select column_name,column_name,...,etc from table_name;
+
+## to fetch all data from the table
+select * form table_name;
+
+## to update the datas from the tables
+update table_name set column_name = updated_value where conditional_column_name = "column_value";
+
+## mysql constraints
+primary key
+foreign key
+unique
+not null
+default
+auto_increment
+check
+
+## to describe table details
+describe table_name;
+
+## to give a condition for input data use check constraint
+create table table_name(column_name datatype(size), column_name datatype(size), ...., check (column_name>/</= value),etc);
+
+## to delete a database
+drop database database_name;
+drop database if exists database_name;
+
+## to delete a table
+drop table table_name;
+
+## to delete a row
+delete from table_name where column_name = value;
+
+## to change datatype of a column
+alter table table_name modify column_name datatype;
+
+## to add a new column to a table
+alter table table_name add column_name datatype;
+
+## to change name of a column
+alter table table_name rename column old_column_name to new_column_name;
+
+## to change table name
+rename table table_name to new_table_name;
+
+## to change order of the colums
+alter table table_name modify column column_name1 after column_name2;
+alter table table_name modify column column_name1 datatype first;
+
+## to select specific records from the table
+select * from table_name where column_name = "value";
+
+## to select specific records from the table using characters
+select * from table_name where column_name like "value";
+values can be: (wild card operator)
+1.value = a%, starts with "a" then any characters
+2.value = %a, ends with "a"
+3.value = %a%, character "a" in between
+4.value = _, single character
+5.value = __, Two characters
+6.value = a__, Two characters after "a"
+7.value = a__%, Two characters after "a" then any characters
+
+## to sort the columns in a table
+select * from table_name order by column_name;
+select * from table_name order by column_name1,column_name2,...,etc;
+select * from table_name order by column_name desc;
+
+## to limit the total no of records displayed
+select * from table_name limit number;
+
+## to group columns in a table
+select column_name,aggregate(column_name) from table_name group by column_name;
+aggregate:
+1.avg
+2.max
+3.min
+4.sum
+5.count
+
+## syntax order
+1.select 
+2.from 
+3.where 
+4.group by 
+5.order by 
+6.limit;
+
+## to list all the unique row values from the table
+select distinct(column_name) from table_name;
+
+## to call a foreign key
+create table table_name(column_name datatype(size), column_name datatype(size), ...., foreign key (column_name) references table_name(column_name));
+
+## join 
+inner join joins common values
+left join joins common values then whats left in the left table
+right join joins common values then whats left in the right table
+
+
+
+
+Examples:
+
+## create table example
+create table customers(
+c_id int primary key not null auto_increment,
+c_name varchar(50) not null,
+email varchar(50) unique not null,
+phno varchar(15) unique,
+signup_date date default "2024-01-01");
+
+## insert example
+insert into datascience_batch values
+("vaisakh",20,"kollam",100,9497588666),
+("kashi",22,"azheekal",95,8136946279),
+("abhijith",21,"iverkala",90,9048019873),
+("shifan",20,"kulathupuzha",91,8592950493),
+("jithu",22,"karalimukku",91,9778784316);
+
+## update example
+update datascience_batch set age = 98 where name = "shifan";
